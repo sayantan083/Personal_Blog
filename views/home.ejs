@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+<section id="written-material">
+
+    <h1>Home</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis molestias soluta esse consequuntur tempore,
+        architecto sed excepturi omnis quae laudantium? Tempore, inventore sequi. Voluptates atque officiis aut aliquam
+        cum placeat.
+        Maxime in alias veritatis asperiores quisquam laborum doloremque quos eum dolorem accusamus sequi autem odit
+        adipisci, consectetur, minima voluptatibus velit quaerat porro tenetur. Eius corrupti nisi, beatae assumenda ea
+        autem!
+        Eos delectus ab, facere magnam dolor nisi! Unde nesciunt blanditiis dignissimos ullam eos! Ratione, voluptatem
+        dolorum ullam ab assumenda est quasi minima ipsam necessitatibus magni, cupiditate vitae incidunt veritatis
+        optio?
+        Reprehenderit vel voluptatum perspiciatis, et in deleniti, neque sequi vero dolorum tempora explicabo! Ipsum in
+        sint exercitationem tempora nobis quas eligendi adipisci enim. Neque vel, dicta sit blanditiis doloribus in.
+        Rerum facere suscipit optio? Voluptate quos id exercitationem excepturi saepe ex. Ipsum aspernatur corporis eum,
+        inventore repellendus laudantium ipsa consequatur, iure eligendi, quis tenetur animi vitae nulla officiis
+        voluptates neque.
+    </p>
+
+    <% for( let i=0;i< DayWiseArticles.length ;i++ ){ %>
+    <div>
+        <h2> <%= DayWiseArticles[i].title %> </h2>
+        <p> <%= DayWiseArticles[i].content.slice(0,100) %>....
+        <a href="/posts/<%= DayWiseArticles[i]._id %> ">Read More</a>
+        </p>
+    </div>
+    <% } %>
+
+</section>
+
+
+<%- include("footer") -%>

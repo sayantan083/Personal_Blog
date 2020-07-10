@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+<section id="written-material">
+
+    <h1>Compose</h1>
+    <form id="form-field" action="/" method="POST">
+        <div>
+            <label for="title">Title</label>
+            <textarea id="title" class="text-field" name="title" rows="1" placeholder="Type your title here"></textarea>
+        </div>
+        <div>
+            <label for="content">Post</label>
+            <textarea id="content" class="text-field" name="content" rows="12" placeholder="Type your post here"></textarea>
+        </div>
+        <button id="btn" type="submit">Publish</button>
+    </form>
+    
+</section>
+
+
+<%- include("footer") -%>

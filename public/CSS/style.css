@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#btn{
+    padding: 0.5%;
+    background-color: #596e79;
+    color: #fff;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+/* Navigation bar */
+#nav-bar{
+    display: flex;
+    top:0;
+    background-color: #f0ece3;
+    padding: 2% 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+}
+#brand{
+    margin: 0 5%;
+    font-weight: bold;
+}
+#nav-bar ul li{
+    list-style: none;
+    margin: 0 4%;
+    /* background-color: blue; */
+}
+#nav-bar ul{
+    display: flex;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    width: 20%;
+    /* background-color: aqua; */
+}
+.nav-link{
+    text-decoration: none;
+    color: #000;
+    /* background-color: violet; */
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color: #c7b198;
+    /* background-color: violet; */
+}
+/* Section for writing contents */
+#written-material{
+    /* background-image: -webkit-linear-gradient(65deg, #c7b198 50%, #dfd3c3 50%); */
+    padding: 5%;
+}
+#written-material p{
+    margin: 2% 0;
+}
+
+/* compose */
+#form-field{
+    margin:2% 0;
+}
+
+.text-field{
+    margin: 1% 0;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* Footer */
+#foot{
+    background-color: #f0ece3;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;   
+    position: relative;
+}
+#foot-content{
+    bottom: 0;
+    position: absolute;
+}
